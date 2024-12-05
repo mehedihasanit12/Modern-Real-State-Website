@@ -1,4 +1,4 @@
-@import url("/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css");
+@import url("../fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css");
 
 
 *{
@@ -17,8 +17,8 @@ a{
     --gray500: #70707B;
     --gray25: #FCFCFC;
     --heading1: 6.5rem;
-    --regular: Satoshi-Regular;
-    --medium: Satoshi-Medium;
+    --regular: "Satoshi-Regular";
+    --medium: "Satoshi-Medium";
 }
 
 
@@ -58,9 +58,9 @@ body{
       left: 0;
       width: 100%;
       height: 1024px;
-      background: url(/assets/images/Overlay.png);
-      background-size: cover; /* কালো অর্ধ-পারদর্শী লেয়ার */
-      z-index: 1; /* ওভারলে উপরের স্তরে থাকবে */
+      background: url("../assets/images/Overlay.png");
+      background-size: cover; 
+      z-index: 1; 
     }
 
 
