@@ -1,0 +1,192 @@
+@import url("/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --white: #FFFFFF;
+    --gray900: #18181B;
+    --gray500: #70707B;
+    --gray25: #FCFCFC;
+    --heading1: 6.5rem;
+    --regular: Satoshi-Regular;
+    --medium: Satoshi-Medium;
+}
+
+
+body{
+    font-family: Satoshi, sans-serif;
+}
+
+
+
+.btn{
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-family: var(--medium);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.8px;
+}
+
+
+.container{
+    margin: 0 80px;
+}
+
+
+.bg{
+    background-image: url("../assets/images/Hero\ Image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1024px;
+}
+
+.bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1024px;
+      background: url(/assets/images/Overlay.png);
+      background-size: cover; /* কালো অর্ধ-পারদর্শী লেয়ার */
+      z-index: 1; /* ওভারলে উপরের স্তরে থাকবে */
+    }
+
+
+/* Header Start*/
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Menu Style Start */
+
+
+.menu{
+
+}
+
+
+.menu ul{
+    display: flex;
+    gap: 10px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--regular);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 12px;
+}
+
+
+
+/* Menu Style End */
+
+
+
+
+/* Nav button Style Start*/
+
+.nav-button{
+
+}
+
+.nav-button a{
+    color: var(--gray900);
+    background-color: var(--white);
+}
+
+
+
+
+/* Nav button Style End*/
+
+
+
+/* Header End*/
+
+
+
+/* Hero Section Start */
+
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 425px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-heading{
+    display: flex;
+    width: 975px;
+    align-items: flex-end;
+
+}
+
+.hero-heading h1{
+    font-family: var(--regular);
+    font-size: var(--heading1);
+    font-weight: 400;
+    color: var(--white);
+
+}
+
+.scroll-arrow{
+    padding: 24px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    backdrop-filter: blur(30px);
+    margin-bottom: 24px;
+}
+
+.scroll-arrow img{
+    width: 32px;
+    height: 32px;
+}
+
+
+.hero-image-gallery{
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    backdrop-filter: blur(20px);
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+
+/* Hero Section End */
