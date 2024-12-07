@@ -361,6 +361,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 339px 55px 1.5px 25px;
     row-gap: 16px;
+    justify-content: space-between;
 
     /* font style */
 
