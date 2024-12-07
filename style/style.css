@@ -307,6 +307,7 @@ nav{
 /* Property Listing Section Start */
 
 .property-listing-section{
+    margin-bottom: 160px;
     
 }
 
@@ -361,7 +362,6 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 339px 55px 1.5px 25px;
     row-gap: 16px;
-    justify-content: space-between;
 
     /* font style */
 
@@ -447,6 +447,17 @@ nav{
 
 
 /* Property Listing Card End*/
+
+
+.property-listing-section-button{
+    display: flex;
+    justify-content: center;
+}
+
+.property-listing-section-button a{
+    background-color: var(--gray900);
+    color: var(--gray25);
+}
 
 
 /* Property Listing Section End */
