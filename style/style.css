@@ -17,6 +17,11 @@ a{
     --gray500: #70707B;
     --gray25: #FCFCFC;
     --heading1: 6.5rem;
+    --heading3: 3.25rem;
+    --heading7: 1.5rem;
+    --xlarge: 1.25rem;
+    --text-small: 0.875rem;
+    --text-medium: 1rem;
     --regular: "Satoshi-Regular";
     --medium: "Satoshi-Medium";
 }
@@ -28,7 +33,20 @@ body{
 
 
 
-.btn{
+.primary-btn{
+    color: var(--gray900);
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-family: var(--medium);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.8px;
+}
+
+.secondary-btn{
+    color: var(--white);
+    background-color: var(--gray900);
     border-radius: 12px;
     padding: 10px 18px;
     font-family: var(--medium);
@@ -49,6 +67,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 1024px;
+    margin-bottom: 80px;
 }
 
 .bg::before {
@@ -117,10 +136,7 @@ nav{
 
 }
 
-.nav-button a{
-    color: var(--gray900);
-    background-color: var(--white);
-}
+
 
 
 
@@ -190,3 +206,246 @@ nav{
 
 
 /* Hero Section End */
+
+
+
+/* Commitment Section Start */
+
+.commitment-section{
+    margin-bottom: 56px;
+}
+
+
+.commitment-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.commitment-content-left{
+    width: 493px;
+}
+
+.commitment-content-left h3{
+    font-family: var(--regular);
+    font-weight: 400;
+    font-size: var(--heading3);
+    color: var(--gray900);
+    line-height: 62.4px;
+    margin-bottom: 32px;
+}
+
+
+.commitment-content-right{
+    width: 662px;
+}
+
+.commitment-content-right p{
+    font-family: var(--regular);
+    font-size: var(--xlarge);
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--gray500);
+}
+
+
+/* Commitment Section End */
+
+
+/* Property Section Start */
+
+
+.property-section{
+    margin-bottom: 160px;
+}
+
+
+.property-card-wrapper{
+    display: flex;
+    gap: 32px;
+
+}
+
+.property-card img{
+    margin-bottom: 24px;
+}
+
+.property-card h1{
+    font-family: var(--regular);
+    font-weight: 400;
+    font-size: var(--heading7);
+    color: var(--gray900);
+    line-height: 28.8px;
+    margin-bottom: 8px;
+}
+
+.property-card p{
+    font-family: var(--regular);
+    font-weight: 400;
+    color: var(--gray500);
+    line-height: 24.8px;
+
+}
+
+.property-card-one{
+    width: 316px;
+}
+
+.property-card-two{
+   width: 402px;
+   margin-top: 136px;
+}
+
+.property-card-three{
+    width: 498px;
+}
+
+
+/* Property Section End */
+
+
+/* Property Listing Section Start */
+
+.property-listing-section{
+    
+}
+
+.property-listing-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.property-listing-head-left{
+
+}
+
+.property-listing-head-left h3{
+    font-family: var(--regular);
+    font-weight: 400;
+    font-size: var(--heading3);
+    color: var(--gray900);
+    line-height: 62.4px;
+}
+
+.property-listing-head-right{
+    width: 573px;
+}
+
+.property-listing-head-right p{
+    font-family: var(--regular);
+    font-size: var(--xlarge);
+    font-weight: 400;
+    line-height: 31px;
+    color: var(--gray500);
+}
+
+
+
+
+/* Property Listing Card Start*/
+
+.property-listing-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,411px);
+    gap: 24px;
+    margin-bottom: 56px;
+}
+
+
+
+.property-listing-card{
+    width: 420px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 339px 55px 1.5px 25px;
+    row-gap: 16px;
+
+    /* font style */
+
+    color: var(--gray500);
+    font-family: var(--medium);
+    font-size: var(--text-small);
+    font-weight: 500;
+    line-height: 21.7px;
+
+}
+
+.property-listing-card h3{
+    font-family: var(--medium);
+    font-size: var(--heading7);
+    line-height: 28.8px;
+    font-weight: 500;
+    color: var(--gray900);
+}
+
+
+.property-listing-card-img{
+    position: relative;
+    grid-column: 1/4;
+}
+
+.property-listing-card-img img{
+    width: 100%;
+}
+
+.property-listing-card-tag{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.property-listing-card-tag img{
+    width: 20px;
+    height: 20px;
+}
+
+.property-listing-card-tag span{
+    
+    height: 36px;
+    background-color: var(--gray900);
+    padding: 8px 12px;
+    border-radius: 22px;
+    margin-left: 8px;
+
+    /* font style */
+    color: var(--gray25);
+    font-family: var(--regular);
+    font-size: var(--text-medium);
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.property-listing-card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/4;
+}
+
+.property-listing-card-price{
+
+}
+
+.property-listing-card-price span{
+    font-family: var(--medium);
+    font-size: var(--xlarge);
+    line-height: 28.8px;
+    font-weight: 700;
+    color: var(--gray900);
+}
+
+.property-listing-card-content-icon{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+/* Property Listing Card End*/
+
+
+/* Property Listing Section End */
